@@ -1,7 +1,7 @@
 {
   "name": "redux-persist-mmkv-adapter",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "repository": "git@github.com:zabutok/redux-persist-mmkv-adapter.git",
   "author": "zabutok <zabutok@mail.ru>",
   "license": "MIT",

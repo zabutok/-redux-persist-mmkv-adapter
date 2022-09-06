@@ -10,8 +10,7 @@ interface Storage {
 export class MMKVAdapter implements Storage {
   storage: MMKV;
   configuration = {
-    id: 'redux-persist-mmkv',
-    path: 'redux-persist-mmkv/store'
+    id: 'redux.persist.mmkv'
   }
   constructor(configuration?: MMKVConfiguration) {
     this.storage = new MMKV({
