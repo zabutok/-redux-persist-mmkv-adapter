@@ -1,0 +1,45 @@
+{
+  "name": "redux-persist-mmkv-adapter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:zabutok/redux-persist-mmkv-adapter.git",
+  "author": "zabutok <zabutok@mail.ru>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all --parallel start:typescript:watch start:server",
+    "start:server": "node node_modules/react-native/local-cli/cli.js start",
+    "start:typescript": "tsc --noEmit",
+    "start:typescript:watch": "tsc -w --noEmit"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@types/react": "^17.0.16",
+    "@types/redux-mock-store": "^1.0.3",
+    "@types/sinon": "^10.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "ava": "^3.15.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.23.4",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "redux": "^4.1.1",
+    "redux-mock-store": "^1.5.4",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.56.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "sinon": "^11.1.2",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "react-native-mmkv": "^2.0.0"
+  }
+}

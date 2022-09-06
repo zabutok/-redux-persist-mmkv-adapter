@@ -1,0 +1,60 @@
+{
+  "comments": false,
+  "presets": [
+    [
+      "module:metro-react-native-babel-preset",
+      {
+        "useTransformReactJSXExperimental": true
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-numeric-separator",
+    "transform-inline-environment-variables",
+    [
+      "@babel/plugin-transform-react-jsx",
+      {
+        "runtime": "automatic"
+      }
+    ],
+    [
+      "babel-plugin-inline-import",
+      {
+        "extensions": [
+          ".svg"
+        ]
+      }
+    ],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "extensions": [
+          ".js",
+          ".ts",
+          ".tsx",
+          ".ios.js",
+          ".android.js"
+        ]
+      }
+    ],
+    "@babel/plugin-transform-runtime"
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-remove-console"
+      ]
+    }
+  }
+}

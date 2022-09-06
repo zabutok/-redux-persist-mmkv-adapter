@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "rootDir": ".",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "es6",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "noImplicitAny": true,
+    "target": "es6",
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "strict": true,
+    "baseUrl": "./",
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+
+  ],
+  "compileOnSave": true
+}
